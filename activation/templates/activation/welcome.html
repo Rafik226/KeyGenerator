@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Bienvenue</title>
+</head>
+<body>
+    <div class="container text-center mt-5">
+        <h1 class="display-4">Bienvenue sur notre plateforme</h1>
+        <p class="lead">Générez facilement des codes d'activation ou connectez-vous pour plus de fonctionnalités.</p>
+        <div class="mt-4">
+            <a href="{% url 'generate_activation_code' %}" class="btn btn-primary btn-lg">Générer un code d'activation</a>
+            <a href="{% url 'login' %}" class="btn btn-secondary btn-lg">Se connecter</a>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
